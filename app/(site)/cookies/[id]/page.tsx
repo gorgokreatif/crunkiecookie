@@ -79,13 +79,18 @@ export default function CookieDetailPage({ params }: { params: Promise<{ id: str
       {/* TAGS */}
       <section className="cd-tags-section">
         <div className="container">
-          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+          <div className="cd-tags-inner">
             {(t.tags ?? []).map(tag => (
-              <span key={tag} className={`chip${/vegan/i.test(tag) ? ' chip--vegan' : ' chip--dark'}`}>{tag}</span>
+              <span key={tag} className={`cd-tag${/vegan/i.test(tag) ? ' cd-tag--vegan' : ' cd-tag--plain'}`}>
+                {tag}
+              </span>
             ))}
+            {(t.tags ?? []).length > 0 && cookie.category.length > 0 && (
+              <span className="cd-tags-sep" />
+            )}
             {cookie.category.map(cat => (
-              <Link key={cat} href={`/cookies?cat=${cat}`}>
-                <span className="chip">{cat}</span>
+              <Link key={cat} href={`/cookies?cat=${cat}`} className="cd-tag cd-tag--cat">
+                {cat}
               </Link>
             ))}
           </div>
@@ -153,7 +158,46 @@ export default function CookieDetailPage({ params }: { params: Promise<{ id: str
         .cd-hero__sticker--red { background: var(--crunkie-red); color: var(--crunkie-white); top: 10%; right: 5%; transform: rotate(12deg); }
         .cd-hero__sticker--cream { background: var(--crunkie-cream); color: var(--crunkie-dark); bottom: 20%; right: -2%; transform: rotate(-8deg); }
         .cd-hero__sticker--blue { background: var(--crunkie-blue); color: var(--crunkie-white); bottom: 10%; left: 5%; transform: rotate(5deg); }
-        .cd-tags-section { padding: clamp(20px,3vw,40px) 0; }
+        .cd-tags-section {
+          padding: clamp(14px,2vw,26px) 0;
+          border-top: 1px solid rgba(31,23,20,0.07);
+          border-bottom: 1px solid rgba(31,23,20,0.07);
+          background: rgba(255,253,248,0.6);
+        }
+        .cd-tags-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+        .cd-tags-sep { display: block; width: 1px; height: 20px; background: rgba(31,23,20,0.15); border-radius: 1px; flex-shrink: 0; }
+        .cd-tag {
+          display: inline-flex; align-items: center; height: 34px; padding: 0 14px;
+          border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+          text-transform: uppercase; white-space: nowrap;
+          transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s, background .2s, color .2s, border-color .2s;
+        }
+        .cd-tag--plain {
+          background: var(--crunkie-white); color: var(--crunkie-chocolate);
+          border: 1.5px solid rgba(31,23,20,0.1);
+        }
+        .cd-tag--plain:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); border-color: rgba(31,23,20,0.22); }
+        .cd-tag--vegan {
+          background: color-mix(in oklab, var(--crunkie-vegan) 12%, var(--crunkie-white));
+          color: var(--crunkie-vegan);
+          border: 1.5px solid color-mix(in oklab, var(--crunkie-vegan) 30%, transparent);
+        }
+        .cd-tag--vegan:hover {
+          background: var(--crunkie-vegan); color: var(--crunkie-white);
+          transform: translateY(-1px); box-shadow: 0 6px 16px -4px rgba(92,126,74,0.4);
+        }
+        .cd-tag--cat {
+          background: color-mix(in oklab, var(--crunkie-blue) 10%, var(--crunkie-white));
+          color: var(--crunkie-blue-deep);
+          border: 1.5px solid color-mix(in oklab, var(--crunkie-blue) 22%, transparent);
+          gap: 5px;
+        }
+        .cd-tag--cat::after { content: "→"; font-size: 10px; opacity: 0.55; transition: transform .2s, opacity .2s; }
+        .cd-tag--cat:hover {
+          background: var(--crunkie-blue); color: var(--crunkie-white); border-color: var(--crunkie-blue);
+          transform: translateY(-2px); box-shadow: 0 6px 16px -4px rgba(77,119,146,0.45);
+        }
+        .cd-tag--cat:hover::after { opacity: 1; transform: translateX(2px); }
         .cd-personality { background: var(--crunkie-soft-cream); }
         .cd-personality__grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px; align-items: start; }
         .cd-personality h2 em { font-style: normal; color: var(--crunkie-blue); }
