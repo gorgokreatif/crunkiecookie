@@ -48,9 +48,13 @@ export default function CookieDetailPage({ params }: { params: Promise<{ id: str
           <div className="cd-hero__copy">
             <Link href="/cookies" className="cd-hero__back">← {ui.back}</Link>
             <div className="cd-hero__badges">
-              {cookie.vegan && <span className="chip chip--vegan">🌱 Vegan</span>}
-              <span className="chip chip--dark">XL · 110g</span>
-              {cookie.category.includes('specials') && <span className="chip chip--red">Special</span>}
+              {cookie.vegan && (
+                <span className="cd-badge cd-badge--vegan">🌱 Vegan</span>
+              )}
+              <span className="cd-badge cd-badge--size">XL · 110g</span>
+              {cookie.category.includes('specials') && (
+                <span className="cd-badge cd-badge--special">★ Special</span>
+              )}
             </div>
             <h1>{cookie.name}</h1>
             <p className="cd-hero__sub">{t.desc}</p>
@@ -142,7 +146,34 @@ export default function CookieDetailPage({ params }: { params: Promise<{ id: str
         .cd-hero__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 2; }
         .cd-hero__back { font-weight: 600; font-size: 14px; color: var(--crunkie-blue); display: inline-flex; align-items: center; gap: 6px; margin-bottom: 24px; border-bottom: 1px solid rgba(77,119,146,0.3); padding-bottom: 2px; transition: gap .2s; }
         .cd-hero__back:hover { gap: 10px; }
-        .cd-hero__badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .cd-hero__badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+        .cd-badge {
+          display: inline-flex; align-items: center; gap: 6px;
+          padding: 8px 16px; border-radius: 999px;
+          font-family: var(--ff-body); font-size: 11px; font-weight: 700;
+          letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap;
+        }
+        .cd-badge--vegan {
+          background: linear-gradient(135deg, var(--crunkie-vegan), color-mix(in oklab, var(--crunkie-vegan) 72%, black));
+          color: var(--crunkie-white);
+          box-shadow: 0 4px 14px -4px rgba(92,126,74,0.55);
+        }
+        .cd-badge--size {
+          background: var(--crunkie-white);
+          color: var(--crunkie-chocolate);
+          border: 1.5px solid rgba(31,23,20,0.1);
+          box-shadow: var(--shadow-sm);
+        }
+        .cd-badge--special {
+          background: linear-gradient(135deg, var(--crunkie-red), var(--crunkie-red-deep));
+          color: var(--crunkie-white);
+          box-shadow: 0 4px 16px -4px rgba(175,89,80,0.6);
+          animation: badge-pulse 2.5s ease-in-out infinite;
+        }
+        @keyframes badge-pulse {
+          0%, 100% { box-shadow: 0 4px 16px -4px rgba(175,89,80,0.55); }
+          50% { box-shadow: 0 6px 22px -2px rgba(175,89,80,0.8); }
+        }
         .cd-hero h1 { font-size: clamp(40px, 6vw, 96px); margin-bottom: 16px; }
         .cd-hero__sub { font-size: clamp(16px, 1.3vw, 20px); line-height: 1.5; color: color-mix(in oklab, var(--crunkie-chocolate) 75%, transparent); margin-top: 8px; }
         .cd-hero__row { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; margin-top: 36px; }
