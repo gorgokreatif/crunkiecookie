@@ -13,6 +13,8 @@ const EMPTY_COOKIE: Cookie = {
 
 const ALL_CATEGORIES = ['chocolate', 'classics', 'nutty', 'fruity', 'specials', 'vegan'];
 
+type UploadState = 'idle' | 'uploading' | 'done' | 'error';
+
 export default function CookieEditPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const router = useRouter();
@@ -21,6 +23,24 @@ export default function CookieEditPage({ params }: { params: Promise<{ id: strin
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [uploadState, setUploadState] = useState<UploadState>('idle');
+  const [preview, setPreview] = useState<string | null>(null);
+
+  const handleImageFile = async (file: File) => {
+    setPreview(URL.createObjectURL(file));
+    setUploadState('uploading');
+    try {
+      const form = new FormData();
+      form.append('file', file);
+      const res = await fetch('/api/admin/upload', { method: 'POST', body: form });
+      if (!res.ok) throw new Error('Upload failed');
+      const { url } = await res.json();
+      setCookie(prev => ({ ...prev, image: url }));
+      setUploadState('done');
+    } catch {
+      setUploadState('error');
+    }
+  };
 
   useEffect(() => {
     if (isNew) return;
@@ -122,11 +142,39 @@ export default function CookieEditPage({ params }: { params: Promise<{ id: strin
                 <input style={inputStyle} value={cookie.price} onChange={e => update('price', e.target.value)} placeholder="5,00 €" />
               </div>
               <div>
-                <label style={labelStyle}>Görsel URL</label>
-                <input style={inputStyle} value={cookie.image} onChange={e => update('image', e.target.value)} placeholder="/assets/cookie-oreo.png" />
-                {cookie.image && (
-                  <Image src={cookie.image} alt="" width={80} height={80} style={{ objectFit: 'contain', marginTop: 8, background: '#F7F0E7', borderRadius: 10, padding: 4 }} />
+                <label style={labelStyle}>Görsel</label>
+                <label style={{
+                  display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer',
+                  padding: '10px 14px', borderRadius: 10,
+                  border: '1.5px dashed rgba(77,119,146,0.4)',
+                  background: 'rgba(77,119,146,0.04)',
+                  fontSize: 14, fontWeight: 600, color: '#4D7792',
+                  transition: 'border-color .2s',
+                }}>
+                  <span style={{ fontSize: 20 }}>🖼️</span>
+                  {uploadState === 'uploading' ? 'Yükleniyor...' : uploadState === 'done' ? '✓ Yüklendi' : uploadState === 'error' ? '⚠ Hata — tekrar dene' : 'Resim seç (PNG / JPG / WebP)'}
+                  <input
+                    type="file"
+                    accept="image/png,image/jpeg,image/webp"
+                    style={{ display: 'none' }}
+                    onChange={e => { const f = e.target.files?.[0]; if (f) handleImageFile(f); }}
+                  />
+                </label>
+                {(preview || cookie.image) && (
+                  <Image
+                    src={preview ?? cookie.image}
+                    alt=""
+                    width={100} height={100}
+                    style={{ objectFit: 'contain', marginTop: 10, background: '#F7F0E7', borderRadius: 12, padding: 6 }}
+                  />
                 )}
+                <label style={{ ...labelStyle, marginTop: 12 }}>veya URL gir</label>
+                <input
+                  style={inputStyle}
+                  value={cookie.image}
+                  onChange={e => { update('image', e.target.value); setPreview(null); }}
+                  placeholder="https://... veya /assets/cookie-oreo.png"
+                />
               </div>
               <div>
                 <label style={labelStyle}>Kategoriler</label>
