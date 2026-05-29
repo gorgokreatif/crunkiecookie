@@ -6,8 +6,14 @@ export default auth((req) => {
   const isLoginPage = pathname === '/admin/login';
   const isApiRoute = pathname.startsWith('/api/admin');
 
+  const isSeedRoute = pathname === '/api/admin/seed';
+
   if (req.auth) return NextResponse.next();
   if (isLoginPage) return NextResponse.next();
+  if (isSeedRoute) {
+    const secret = req.nextUrl.searchParams.get('secret');
+    if (secret === process.env.SEED_SECRET) return NextResponse.next();
+  }
   if (isApiRoute) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
 
   const loginUrl = new URL('/admin/login', req.url);
