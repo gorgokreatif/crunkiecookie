@@ -1,18 +1,22 @@
 'use client';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLang } from '../../components/LangContext';
 import CookieCard from '../../components/CookieCard';
 import Reveal from '../../components/Reveal';
-import cookiesData from '../../data/cookies.json';
 import type { Cookie } from '../../types';
 
-const cookies = cookiesData as Cookie[];
 const FEATURED_IDS = ['crush-the-oreo', 'lotus-affair', 'red-flag', 'barely-legal', 'walnut-riot', 'chocolate-mood'];
 const VEGAN_IDS = ['vegan-vice', 'clean-cheat'];
 
 export default function HomePage() {
   const { lang } = useLang();
+  const [cookies, setCookies] = useState<Cookie[]>([]);
+
+  useEffect(() => {
+    fetch('/api/cookies').then(r => r.json()).then(setCookies);
+  }, []);
 
   const featured = FEATURED_IDS.map(id => cookies.find(c => c.id === id)).filter(Boolean) as Cookie[];
   const veganCookies = VEGAN_IDS.map(id => cookies.find(c => c.id === id)).filter(Boolean) as Cookie[];

@@ -6,15 +6,17 @@ import { useSearchParams } from 'next/navigation';
 import { useLang } from '../../../components/LangContext';
 import CookieCard from '../../../components/CookieCard';
 import Reveal from '../../../components/Reveal';
-import cookiesData from '../../../data/cookies.json';
 import type { Cookie } from '../../../types';
-
-const cookies = cookiesData as Cookie[];
 
 function CookiesPageInner() {
   const { lang } = useLang();
   const params = useSearchParams();
   const [activeFilter, setActiveFilter] = useState('all');
+  const [cookies, setCookies] = useState<Cookie[]>([]);
+
+  useEffect(() => {
+    fetch('/api/cookies').then(r => r.json()).then(setCookies);
+  }, []);
 
   useEffect(() => {
     const cat = params.get('cat');

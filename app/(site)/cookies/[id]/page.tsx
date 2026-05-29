@@ -1,19 +1,28 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { use } from 'react';
+import { use, useState, useEffect } from 'react';
 import { notFound } from 'next/navigation';
 import { useLang } from '../../../../components/LangContext';
 import CookieCard from '../../../../components/CookieCard';
 import Reveal from '../../../../components/Reveal';
-import cookiesData from '../../../../data/cookies.json';
 import type { Cookie } from '../../../../types';
-
-const cookies = cookiesData as Cookie[];
 
 export default function CookieDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const { lang } = useLang();
+  const [cookies, setCookies] = useState<Cookie[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/cookies').then(r => r.json()).then((data: Cookie[]) => {
+      setCookies(data);
+      setLoading(false);
+    });
+  }, []);
+
+  if (loading) return null;
+
   const cookie = cookies.find(c => c.id === id);
   if (!cookie) notFound();
 

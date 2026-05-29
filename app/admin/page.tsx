@@ -1,10 +1,17 @@
 'use client';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import cookiesData from '../../data/cookies.json';
+import type { Cookie } from '../../types';
 
 export default function AdminDashboard() {
-  const total = cookiesData.length;
-  const vegan = cookiesData.filter((c) => c.vegan).length;
+  const [cookies, setCookies] = useState<Cookie[]>([]);
+
+  useEffect(() => {
+    fetch('/api/admin/cookies').then(r => r.json()).then(setCookies);
+  }, []);
+
+  const total = cookies.length;
+  const vegan = cookies.filter((c) => c.vegan).length;
 
   const cards = [
     { label: 'Toplam Cookie', value: total, icon: '🍪', href: '/admin/cookies', color: '#AF5950' },
@@ -74,7 +81,7 @@ export default function AdminDashboard() {
             </tr>
           </thead>
           <tbody>
-            {cookiesData.map((c, i) => (
+            {cookies.map((c, i) => (
               <tr key={c.id} style={{ borderTop: '1px solid rgba(31,23,20,0.06)', background: i % 2 === 0 ? '#FFFDF8' : '#FDFAF6' }}>
                 <td style={{ padding: '14px 20px', fontWeight: 600, color: '#1F1714' }}>{c.name}</td>
                 <td style={{ padding: '14px 20px', color: '#AF5950', fontWeight: 600 }}>{c.price}</td>
