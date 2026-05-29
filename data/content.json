@@ -1,0 +1,214 @@
+{
+  "home": {
+    "de": {
+      "heroKicker": "Premium Cookies · Made in Germany",
+      "heroTitle": "Cookies, die man <em>nicht&nbsp;vergisst.</em>",
+      "heroSub": "Warme Cookies. Moderne Dessertkultur. Echte Momente.",
+      "heroCta1": "Unsere Cookies entdecken",
+      "heroCta2": "Kontakt aufnehmen",
+      "heroStat": "Sorten · und es werden mehr",
+      "heroVeganK": "Plant Based",
+      "heroVeganT": "Vegane Linie",
+      "heroQuote": "So laut im Geschmack.<br>So <em>Crunkie.</em>",
+      "apEyebrow": "Über Crunkie · 2026",
+      "apTitle": "Mehr als nur <em>ein Cookie.</em>",
+      "apText": "Eine moderne, energiegeladene Dessert-Marke. Kein Snack — ein Moment zum Teilen, Fotografieren und Genießen.",
+      "apMore": "Unsere Geschichte →",
+      "apS1": "Sorten",
+      "apS2": "pro Cookie",
+      "apS3": "handgemacht",
+      "cpEyebrow": "Unsere Cookies",
+      "cpTitle": "Unsere Cookie-Welt",
+      "cpAll": "Alle Cookies ansehen →",
+      "vsEyebrow": "🌱 Plant Based · Vegan Line",
+      "vsTitle": "100% pflanzlich. <br><em>100% Crunkie.</em>",
+      "vsText": "Zwei Cookies, kein Kompromiss. Unsere vegane Linie wird mit denselben großen Portionen, dem gleichen Crunch und derselben Liebe gebacken — nur ganz ohne tierische Zutaten.",
+      "vsP1": "<strong>Ohne Milch &amp; Ei.</strong> 100% pflanzliche Zutaten.",
+      "vsP2": "<strong>Voller Geschmack.</strong> Kein Kompromiss bei Crunch oder Aroma.",
+      "vsP3": "<strong>Gleiche Liebe.</strong> Handgemacht, frisch gebacken, groß portioniert.",
+      "vsCta": "Vegane Cookies entdecken →",
+      "b2bEyebrow": "Crunkie for Business",
+      "b2bTitle": "Crunkie für <em>Unternehmen.</em>",
+      "b2bText": "Ob Meetings, Events, Kundengeschenke oder Office Treats — mit Crunkie Boxen wird jeder Business-Moment süßer.",
+      "b2bCta1": "B2B Angebot anfragen",
+      "b2bCta2": "Mehr erfahren →"
+    },
+    "en": {
+      "heroKicker": "Premium Cookies · Made in Germany",
+      "heroTitle": "Cookies you <em>don't&nbsp;forget.</em>",
+      "heroSub": "Warm cookies. Modern dessert culture. Real moments.",
+      "heroCta1": "Explore our cookies",
+      "heroCta2": "Contact us",
+      "heroStat": "flavors · and counting",
+      "heroVeganK": "Plant Based",
+      "heroVeganT": "Vegan line",
+      "heroQuote": "So loud in taste.<br>So <em>Crunkie.</em>",
+      "apEyebrow": "About Crunkie · 2026",
+      "apTitle": "More than just <em>a cookie.</em>",
+      "apText": "A modern, energetic dessert brand. Not a snack — a moment to share, photograph and enjoy.",
+      "apMore": "Our story →",
+      "apS1": "flavors",
+      "apS2": "per cookie",
+      "apS3": "handmade",
+      "cpEyebrow": "Our cookies",
+      "cpTitle": "Our Cookie World",
+      "cpAll": "See all cookies →",
+      "vsEyebrow": "🌱 Plant Based · Vegan Line",
+      "vsTitle": "100% plant-based. <br><em>100% Crunkie.</em>",
+      "vsText": "Two cookies, zero compromise. Our vegan line is baked with the same big portions, the same crunch, and the same love — just without any animal ingredients.",
+      "vsP1": "<strong>No milk &amp; egg.</strong> 100% plant-based ingredients.",
+      "vsP2": "<strong>Full flavor.</strong> No compromise on crunch or taste.",
+      "vsP3": "<strong>Same love.</strong> Handmade, freshly baked, big portions.",
+      "vsCta": "Discover vegan cookies →",
+      "b2bEyebrow": "Crunkie for Business",
+      "b2bTitle": "Crunkie for <em>Business.</em>",
+      "b2bText": "From meetings and events to client gifts and office treats — Crunkie boxes make every business moment sweeter.",
+      "b2bCta1": "Request B2B offer",
+      "b2bCta2": "Learn more →"
+    }
+  },
+  "about": {
+    "de": {
+      "eyebrow": "Über uns · About",
+      "title": "Mehr als nur <em>Cookies.</em>",
+      "sub": "Die moderne Dessert-Marke für alle, die das Besondere lieben.",
+      "storyEyebrow": "Unsere Geschichte",
+      "storyTitle": "Aus einer <em>Idee.</em> Aus einer Küche. Aus echter Liebe.",
+      "storyText": "Crunkie entstand aus der Idee, Cookies neu zu denken: größer, weicher, intensiver und mit einem Look, den man sofort teilen möchte. Jeder Cookie steht für ehrliches Handwerk, starke Zutaten und einen Moment, der bleibt.",
+      "valuesTitle": "Echte Werte. <em>Echter Geschmack.</em>",
+      "expTitle": "Das Crunkie <em>Erlebnis.</em>",
+      "expText": "Crunkie ist Pause, Belohnung und Erlebnis zugleich. Ob im Store, im Büro oder als Geschenk — ein Crunkie Moment bleibt im Kopf.",
+      "ctaTitle": "So loud, it's <em>Crunkie proud.</em>"
+    },
+    "en": {
+      "eyebrow": "About us",
+      "title": "More than just <em>cookies.</em>",
+      "sub": "The modern dessert brand for everyone who loves something special.",
+      "storyEyebrow": "Our story",
+      "storyTitle": "From an <em>idea.</em> From a kitchen. From real love.",
+      "storyText": "Crunkie was created from the idea of rethinking cookies: bigger, softer, richer and designed to be shared. Every cookie stands for honest craft, bold ingredients and a moment that stays.",
+      "valuesTitle": "Real values. <em>Real taste.</em>",
+      "expTitle": "The Crunkie <em>experience.</em>",
+      "expText": "Crunkie is a break, a reward and an experience at the same time. In-store, at the office or as a gift — a Crunkie moment stays with you.",
+      "ctaTitle": "So loud, it's <em>Crunkie proud.</em>"
+    }
+  },
+  "cookies": {
+    "de": {
+      "eyebrow": "Cookies · Cookie-Welt",
+      "title": "Unsere <em>Cookie-Welt.</em>",
+      "sub": "Groß, weich, intensiv und voller Charakter. Jeder Crunkie hat seinen eigenen Geschmack, Look und Moment.",
+      "filterAll": "Alle",
+      "filterClassics": "Klassiker",
+      "filterChocolate": "Schokolade",
+      "filterNutty": "Nussig",
+      "filterFruity": "Fruchtig",
+      "filterSpecials": "Specials",
+      "filterVegan": "Vegan",
+      "veganTitle": "Zwei Cookies, <em>kein Kompromiss.</em>",
+      "veganText": "Unsere veganen Cookies sind 100% pflanzlich gebacken — mit demselben großen Genuss, den du von Crunkie kennst."
+    },
+    "en": {
+      "eyebrow": "Cookies · Cookie World",
+      "title": "Our <em>Cookie World.</em>",
+      "sub": "Big, soft, rich and full of character. Every Crunkie has its own taste, look and moment.",
+      "filterAll": "All",
+      "filterClassics": "Classics",
+      "filterChocolate": "Chocolate",
+      "filterNutty": "Nutty",
+      "filterFruity": "Fruity",
+      "filterSpecials": "Specials",
+      "filterVegan": "Vegan",
+      "veganTitle": "Two cookies, <em>zero compromise.</em>",
+      "veganText": "Our vegan cookies are baked 100% plant-based — with the same big indulgence you know from Crunkie."
+    }
+  },
+  "contact": {
+    "de": {
+      "eyebrow": "Kontakt · Visit us",
+      "title": "Lust auf <em>Crunkie?</em>",
+      "sub": "Besuche uns, entdecke unsere Cookies oder kontaktiere uns für Anfragen, Kooperationen und Events.",
+      "formTitle": "Eine Nachricht <em>genügt.</em>",
+      "formText": "Fragen, Wünsche, Kooperationen — wir antworten meist innerhalb von 24 Stunden.",
+      "address": "Am Neutor 6, Bonn / Köln",
+      "email": "hello@crunkiecookie.com",
+      "b2bEmail": "b2b@crunkiecookie.com",
+      "hoursWeekday": "Mo – Fr: 11:00 – 21:00",
+      "hoursWeekend": "Sa – So: 12:00 – 22:00"
+    },
+    "en": {
+      "eyebrow": "Contact · Visit us",
+      "title": "Ready for <em>Crunkie?</em>",
+      "sub": "Visit us, explore our cookies or contact us for inquiries, collaborations and events.",
+      "formTitle": "One message is <em>enough.</em>",
+      "formText": "Questions, ideas, collaborations — we usually reply within 24 hours.",
+      "address": "Am Neutor 6, Bonn / Köln",
+      "email": "hello@crunkiecookie.com",
+      "b2bEmail": "b2b@crunkiecookie.com",
+      "hoursWeekday": "Mon – Fri: 11:00 – 21:00",
+      "hoursWeekend": "Sat – Sun: 12:00 – 22:00"
+    }
+  },
+  "b2b": {
+    "de": {
+      "eyebrow": "Crunkie for Business",
+      "title": "Cookies, die Geschäftsbeziehungen <em>versüßen.</em>",
+      "sub": "Premium Cookie-Boxen für Meetings, Events, Kundengeschenke und besondere Momente im Unternehmen.",
+      "cta1": "B2B Angebot anfragen",
+      "cta2": "Cookie-Boxen entdecken",
+      "useCasesTitle": "Für jeden <em>Business-Moment.</em>",
+      "formTitle": "Angebot <em>anfragen.</em>",
+      "formText": "Erzähl uns von deinem Projekt — wir melden uns innerhalb von 24 Stunden."
+    },
+    "en": {
+      "eyebrow": "Crunkie for Business",
+      "title": "Cookies that sweeten <em>business relationships.</em>",
+      "sub": "Premium cookie boxes for meetings, events, client gifts and special company moments.",
+      "cta1": "Request B2B offer",
+      "cta2": "Explore cookie boxes",
+      "useCasesTitle": "For every <em>business moment.</em>",
+      "formTitle": "Request an <em>offer.</em>",
+      "formText": "Tell us about your project — we'll get back to you within 24 hours."
+    }
+  },
+  "nav": {
+    "de": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "cookies": "Cookies",
+      "b2b": "B2B",
+      "contact": "Kontakt",
+      "cta": "Jetzt vorbeikommen"
+    },
+    "en": {
+      "home": "Home",
+      "about": "About",
+      "cookies": "Cookies",
+      "b2b": "B2B",
+      "contact": "Contact",
+      "cta": "Visit us today"
+    }
+  },
+  "footer": {
+    "de": {
+      "slogan": "Warme Cookies. Starke Momente. Crunkie.",
+      "address": "Am Neutor 6, Bonn / Köln",
+      "email": "hello@crunkiecookie.com",
+      "b2bEmail": "b2b@crunkiecookie.com",
+      "instagram": "@crunkiecookie",
+      "hoursWeekday": "Mo – Fr: 11:00 – 21:00",
+      "hoursWeekend": "Sa – So: 12:00 – 22:00",
+      "rights": "© 2026 Crunkie. Alle Rechte vorbeschmeckt."
+    },
+    "en": {
+      "slogan": "Warm cookies. Bold moments. Crunkie.",
+      "address": "Am Neutor 6, Bonn / Köln",
+      "email": "hello@crunkiecookie.com",
+      "b2bEmail": "b2b@crunkiecookie.com",
+      "instagram": "@crunkiecookie",
+      "hoursWeekday": "Mon – Fri: 11:00 – 21:00",
+      "hoursWeekend": "Sat – Sun: 12:00 – 22:00",
+      "rights": "© 2026 Crunkie. All rights pre-tasted."
+    }
+  }
+}

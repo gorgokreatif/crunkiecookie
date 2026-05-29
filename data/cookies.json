@@ -1,0 +1,535 @@
+[
+  {
+    "id": "crush-the-oreo",
+    "name": "Crush the Oreo",
+    "image": "/assets/cookie-oreo.png",
+    "category": [
+      "chocolate",
+      "specials"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Schokoladig, cremig und voller Crunch.",
+      "tags": [
+        "Schoko",
+        "Oreo",
+        "Cremig"
+      ],
+      "mood": "Bold. Schokoladig. Selbstbewusst."
+    },
+    "en": {
+      "desc": "Chocolatey, creamy and full of crunch.",
+      "tags": [
+        "Chocolate",
+        "Oreo",
+        "Creamy"
+      ],
+      "mood": "Bold. Chocolatey. Self-confident."
+    }
+  },
+  {
+    "id": "lotus-affair",
+    "name": "Lotus Affair",
+    "image": "/assets/cookie-lotus.png",
+    "category": [
+      "classics",
+      "specials"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Karamellig, weich und unwiderstehlich.",
+      "tags": [
+        "Lotus",
+        "Karamell"
+      ],
+      "mood": "Weich. Karamellig. Verführerisch."
+    },
+    "en": {
+      "desc": "Caramel-like, soft and irresistible.",
+      "tags": [
+        "Lotus",
+        "Caramel"
+      ],
+      "mood": "Soft. Caramel. Irresistible."
+    }
+  },
+  {
+    "id": "red-flag",
+    "name": "Red Flag",
+    "image": "/assets/cookie-redflag.png",
+    "category": [
+      "specials"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Roter Velvet-Drama mit weißer Schoko.",
+      "tags": [
+        "Red Velvet",
+        "Limited"
+      ],
+      "mood": "Dramatisch. Velvet. Unwiderstehlich."
+    },
+    "en": {
+      "desc": "Red velvet drama with white chocolate.",
+      "tags": [
+        "Red Velvet",
+        "Limited"
+      ],
+      "mood": "Dramatic. Velvet. Irresistible."
+    }
+  },
+  {
+    "id": "barely-legal",
+    "name": "Barely Legal",
+    "image": "/assets/cookie-barelylegal.png",
+    "category": [
+      "classics",
+      "chocolate"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Der klassische Chocolate Chip, perfekt rebellisch.",
+      "tags": [
+        "Klassiker",
+        "Schoko"
+      ],
+      "mood": "Klassisch. Rebellisch. Vertraut."
+    },
+    "en": {
+      "desc": "The classic chocolate chip — perfectly rebellious.",
+      "tags": [
+        "Classic",
+        "Chocolate"
+      ],
+      "mood": "Classic. Rebellious. Familiar."
+    }
+  },
+  {
+    "id": "walnut-riot",
+    "name": "Walnut Riot",
+    "image": "/assets/cookie-walnut.png",
+    "category": [
+      "nutty"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Buttrige Walnuss-Eskalation mit Schoko-Karamell.",
+      "tags": [
+        "Walnuss",
+        "Karamell"
+      ],
+      "mood": "Nussig. Buttrig. Explosiv."
+    },
+    "en": {
+      "desc": "Buttery walnut escalation with chocolate caramel.",
+      "tags": [
+        "Walnut",
+        "Caramel"
+      ],
+      "mood": "Nutty. Buttery. Explosive."
+    }
+  },
+  {
+    "id": "chocolate-mood",
+    "name": "Chocolate Mood",
+    "image": "/assets/cookie-chocolate.png",
+    "category": [
+      "chocolate"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Tiefdunkle Schokolade trifft auf weiche Mitte.",
+      "tags": [
+        "Dark",
+        "Doppelt Schoko"
+      ],
+      "mood": "Dunkel. Intensiv. Soulful."
+    },
+    "en": {
+      "desc": "Deep dark chocolate meets a soft molten centre.",
+      "tags": [
+        "Dark",
+        "Double Choc"
+      ],
+      "mood": "Dark. Intense. Soulful."
+    }
+  },
+  {
+    "id": "pistachio-dream",
+    "name": "Pistachio Dream",
+    "image": "/assets/cookie-pistachio.png",
+    "category": [
+      "nutty",
+      "specials"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Cremige Pistazie mit weißer Schoko-Glasur.",
+      "tags": [
+        "Pistazie",
+        "Glasur"
+      ],
+      "mood": "Grün. Cremig. Premium."
+    },
+    "en": {
+      "desc": "Creamy pistachio with white chocolate glaze.",
+      "tags": [
+        "Pistachio",
+        "Glazed"
+      ],
+      "mood": "Green. Creamy. Premium."
+    }
+  },
+  {
+    "id": "matcha-kiss",
+    "name": "Matcha Kiss",
+    "image": "/assets/cookie-matcha-kiss.png",
+    "category": [
+      "specials",
+      "fruity"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Matcha-Hibiskus-Liebe mit Beerenkern.",
+      "tags": [
+        "Matcha",
+        "Beere"
+      ],
+      "mood": "Grasig. Fruchtig. Unerwartet."
+    },
+    "en": {
+      "desc": "Matcha hibiscus love with a berry core.",
+      "tags": [
+        "Matcha",
+        "Berry"
+      ],
+      "mood": "Grassy. Fruity. Unexpected."
+    }
+  },
+  {
+    "id": "golden-bite",
+    "name": "Golden Bite",
+    "image": "/assets/cookie-golden.png",
+    "category": [
+      "classics",
+      "specials"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Weiße Schokolade & weiche Karamellnoten.",
+      "tags": [
+        "Weiße Schoko",
+        "Karamell"
+      ],
+      "mood": "Golden. Süß. Luxuriös."
+    },
+    "en": {
+      "desc": "White chocolate & mellow caramel notes.",
+      "tags": [
+        "White Choc",
+        "Caramel"
+      ],
+      "mood": "Golden. Sweet. Luxurious."
+    }
+  },
+  {
+    "id": "soft-spot",
+    "name": "Soft Spot",
+    "image": "/assets/cookie-softspot.png",
+    "category": [
+      "classics"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Schokostückchen, butterweich, immer warm.",
+      "tags": [
+        "Klassiker",
+        "Weich"
+      ],
+      "mood": "Warm. Vertraut. Komfortabel."
+    },
+    "en": {
+      "desc": "Chocolate chunks, butter-soft, always warm.",
+      "tags": [
+        "Classic",
+        "Soft"
+      ],
+      "mood": "Warm. Familiar. Comforting."
+    }
+  },
+  {
+    "id": "night-shift",
+    "name": "Night Shift",
+    "image": "/assets/cookie-nightshift.png",
+    "category": [
+      "chocolate"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Doppelt dunkler Brownie-Cookie für späte Stunden.",
+      "tags": [
+        "Dark",
+        "Brownie"
+      ],
+      "mood": "Dunkel. Intensiv. Nachtaktiv."
+    },
+    "en": {
+      "desc": "Double-dark brownie cookie for late hours.",
+      "tags": [
+        "Dark",
+        "Brownie"
+      ],
+      "mood": "Dark. Intense. Nocturnal."
+    }
+  },
+  {
+    "id": "salted-crunk",
+    "name": "Salted Crunk",
+    "image": "/assets/cookie-salt.png",
+    "category": [
+      "nutty",
+      "specials"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Erdnuss, Karamell und Meersalz-Knall.",
+      "tags": [
+        "Erdnuss",
+        "Salzig"
+      ],
+      "mood": "Salzig. Süß. Komplex."
+    },
+    "en": {
+      "desc": "Peanut, caramel and a sea-salt snap.",
+      "tags": [
+        "Peanut",
+        "Salty"
+      ],
+      "mood": "Salty. Sweet. Complex."
+    }
+  },
+  {
+    "id": "berry-trouble",
+    "name": "Berry Trouble",
+    "image": "/assets/cookie-berry-trouble.png",
+    "category": [
+      "fruity"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Wilde Beeren-Marmelade in weichem Teig.",
+      "tags": [
+        "Beere",
+        "Fruchtig"
+      ],
+      "mood": "Fruchtig. Wild. Sommer."
+    },
+    "en": {
+      "desc": "Wild berry jam in soft cookie dough.",
+      "tags": [
+        "Berry",
+        "Fruity"
+      ],
+      "mood": "Fruity. Wild. Summer."
+    }
+  },
+  {
+    "id": "peel-me-slow",
+    "name": "Peel Me Slow",
+    "image": "/assets/cookie-peel-me-slow.png",
+    "category": [
+      "specials",
+      "fruity"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Banane, Karamell und ein Hauch Zimt.",
+      "tags": [
+        "Banane",
+        "Karamell"
+      ],
+      "mood": "Tropisch. Süß. Entspannt."
+    },
+    "en": {
+      "desc": "Banana, caramel and a hint of cinnamon.",
+      "tags": [
+        "Banana",
+        "Caramel"
+      ],
+      "mood": "Tropical. Sweet. Relaxed."
+    }
+  },
+  {
+    "id": "hazel-habit",
+    "name": "Hazel Habit",
+    "image": "/assets/cookie-hazel.png",
+    "category": [
+      "nutty"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Haselnusscreme trifft auf knackige Schoko.",
+      "tags": [
+        "Haselnuss",
+        "Nougat"
+      ],
+      "mood": "Nussig. Cremig. Verführerisch."
+    },
+    "en": {
+      "desc": "Hazelnut cream meets crunchy chocolate.",
+      "tags": [
+        "Hazelnut",
+        "Nougat"
+      ],
+      "mood": "Nutty. Creamy. Tempting."
+    }
+  },
+  {
+    "id": "the-habit",
+    "name": "The Habit",
+    "image": "/assets/cookie-habit.png",
+    "category": [
+      "specials"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Kinder-Riegel Mitte mit weißer Creme.",
+      "tags": [
+        "Kinder",
+        "Creme"
+      ],
+      "mood": "Nostalgisch. Süß. Kindheit."
+    },
+    "en": {
+      "desc": "Kinder-bar centre with white cream.",
+      "tags": [
+        "Kinder",
+        "Cream"
+      ],
+      "mood": "Nostalgic. Sweet. Childhood."
+    }
+  },
+  {
+    "id": "the-flex",
+    "name": "The Flex",
+    "image": "/assets/cookie-flex.png",
+    "category": [
+      "nutty",
+      "chocolate"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Schoko-Erdnuss-Power für den großen Bissen.",
+      "tags": [
+        "Erdnuss",
+        "Schoko"
+      ],
+      "mood": "Power. Mutig. Unerschrocken."
+    },
+    "en": {
+      "desc": "Chocolate peanut power for the bold bite.",
+      "tags": [
+        "Peanut",
+        "Chocolate"
+      ],
+      "mood": "Power. Bold. Fearless."
+    }
+  },
+  {
+    "id": "blackout",
+    "name": "Blackout",
+    "image": "/assets/cookie-blackout.png",
+    "category": [
+      "chocolate"
+    ],
+    "price": "5,00 €",
+    "vegan": false,
+    "de": {
+      "desc": "Schwarzer Kakao, schmelzende Schoko-Mitte.",
+      "tags": [
+        "Dark",
+        "Schmelz"
+      ],
+      "mood": "Mysteriös. Dunkel. Intensiv."
+    },
+    "en": {
+      "desc": "Black cocoa, molten chocolate centre.",
+      "tags": [
+        "Dark",
+        "Melt"
+      ],
+      "mood": "Mysterious. Dark. Intense."
+    }
+  },
+  {
+    "id": "vegan-vice",
+    "name": "Vegan Vice",
+    "image": "/assets/cookie-vegan-vice.png",
+    "category": [
+      "vegan",
+      "chocolate"
+    ],
+    "price": "5,00 €",
+    "vegan": true,
+    "de": {
+      "desc": "100% pflanzlich. 100% Crunkie-Drama.",
+      "tags": [
+        "Vegan",
+        "Schoko"
+      ],
+      "mood": "Pflanzlich. Dramatisch. Mutig."
+    },
+    "en": {
+      "desc": "100% plant-based. 100% Crunkie drama.",
+      "tags": [
+        "Vegan",
+        "Chocolate"
+      ],
+      "mood": "Plant-based. Dramatic. Bold."
+    }
+  },
+  {
+    "id": "clean-cheat",
+    "name": "Clean Cheat",
+    "image": "/assets/cookie-clean-cheat.png",
+    "category": [
+      "vegan",
+      "classics"
+    ],
+    "price": "5,00 €",
+    "vegan": true,
+    "de": {
+      "desc": "Vegan, weich, ohne schlechtes Gewissen.",
+      "tags": [
+        "Vegan",
+        "Klassiker"
+      ],
+      "mood": "Rein. Leicht. Unschuldig."
+    },
+    "en": {
+      "desc": "Vegan, soft, zero guilt.",
+      "tags": [
+        "Vegan",
+        "Classic"
+      ],
+      "mood": "Clean. Light. Innocent."
+    }
+  }
+]
